@@ -37,22 +37,22 @@
     <embed src="hadiahulta2.mp3" autoplay></embed>
 </div>
 
-<div id="music"><embed src="hadiaultah2.mp3" ></div>
+<div id="music">
+    <embed src="hadiahulta2.mp3" autoplay></embed>
+</div>
 
-        <script>
-          window.onload = setInterval(GameLoop, 100 / 60); //10fps
-    
-    let myAudio = new Audio();
-    
-    myAudio.src = 'hadiahultah2.mp3';
+<script>
+    window.onload = setInterval(Gameloop, 100 / 60); //10fps
+
+    let myAudio = new Audio('hadiahulta2.mp3');
     
     function Gameloop() {
-        myAudio.play();
-        if (myAudio.paused == true) {
+        if (myAudio.paused) {
             myAudio.play();
         }
     }
-        </script>
+</script>
+
 
 </body>
 </html>
