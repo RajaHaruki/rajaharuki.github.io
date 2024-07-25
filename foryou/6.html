@@ -150,21 +150,20 @@
         </div>
       </div>
     </div>
-    <div id="music"><embed src="hadiahultah.mp3" ></div>
+   <div id="music">
+    <embed src="hadiah_ultah.mp3" autoplay></embed>
+</div>
 
-    <script>
-      window.onload = setInterval(GameLoop, 1000 / 60); //10fps
+<script>
+    window.onload = setInterval(Gameloop, 100 / 60); //10fps
 
-let myAudio = new Audio();
-
-myAudio.src = 'hadiahultah.mp3';
-
-function Gameloop() {
-    myAudio.play();
-    if (myAudio.paused == true) {
-        myAudio.play();
+    let myAudio = new Audio('hadiah_ultah.mp3');
+    
+    function Gameloop() {
+        if (myAudio.paused) {
+            myAudio.play();
+        }
     }
-}
-    </script>
+</script>
   </body>
 </html>
